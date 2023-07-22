@@ -4,392 +4,130 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warner Bros</title>
-    <link rel="stylesheet" href="css/style.css"/>
+    <title>WARNER BROS</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/warner.jpg"/>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-func.js"></script>
 </head>
 <body>
-   
-    <a href="https://www.Warner Bros.com/">Warner Bros</a>
-    <nav class="navigation">
-        <input type="checkbox" class="menu-btn" id="menu-btn">
-        <label for="menu-btn" class="menu-icon">
-            <span class="nav-icon"></span>
-        </label>
-
-        <a href="index.html" class="logo">
-            Movies<span>.hd</span>
-        </a>
-        <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Movies</a></li>
-            <li><a href="#">TV Shows</a></li>
-            <li><a href="#">Games & Apps</a></li>
-            <li><a href="#">Experiences</a></li>
-            <li><a href="#">Feedback</a></li>
+    <div id="header">
+        <h1 id="logo"><a href="#">WARNER BROS</a></h1>
+        <div id="navigation">
+        <ul>
+            <li><a class="active" href="#">HOME</a></li>
+            <li><a href="#">MOVIES</a></li>
+            <li><a href="#">TV SHOWS</a></li>
+            <li><a href="#">COMING SOON</a></li>
+            <li><a href="#">GAMES AND APPS</a></li>
+            <li><a href="#">EXPERIENCE</a></li>
+            <li><a href="#">FEEDBACK</a></li>
         </ul>
-        <form action='' class="search-box">
-            <input type="text" name="search" placeholder="search movie" class="search-input" required/>
-            <button type="submit">
-                <i class="fas fa-search"></i>
-            </button>
-        </form>
-    </nav>
-
-    <section id="main-slider">
-
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"></div>
-           
         </div>
-       
-    </div>
-
-        <div class="main-slider-box">
-            <a href="#" class="main-slider-overlay">
-                <i class="fas fa-play"></i>
-            </a>
-
-            <div class="main-slider-img">
-                <img src="images/The_Batman_(film)_poster.jpg" alt="poster"/>
-            </div>
-
-            <div class="main-slider-text">
-                <span class="quality">Full HD</span>
-
-                <div class="bottom-text">
-                    <div class="movie-name">
-                        <span>2022</span>
-                        <a href="#">The Batman</a>
-                    </div>
-
-                    <div class="category-rating">
-                        <div class="category">
-                            <a href="#">action</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide"></div>
-           
-            </div>
-           
-        </div>
-    
-            <div class="main-slider-box">
-                <a href="#" class="main-slider-overlay">
-                    <i class="fas fa-play"></i>
-                </a>
-    
-                <div class="main-slider-img">
-                    <img src="images/Black_Adam_(film)_poster.jpg" alt="poster"/>
-                </div>
-    
-                <div class="main-slider-text">
-                    <span class="quality">Full HD</span>
-    
-                    <div class="bottom-text">
-                        <div class="movie-name">
-                            <span>2022</span>
-                            <a href="#">Black_Adam_</a>
-                        </div>
-    
-                        <div class="category-rating">
-                            <div class="category">
-                                <a href="#">Fantasy, Action</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide"></div>
-           
-        </div>
-       
-    </div>
-
-        <div class="main-slider-box">
-            <a href="#" class="main-slider-overlay">
-                <i class="fas fa-play"></i>
-            </a>
-
-            <div class="main-slider-img">
-                <img src="images/The_Fallout_2021.jpg" alt="poster"/>
-            </div>
-
-            <div class="main-slider-text">
-                <span class="quality">Full HD</span>
-
-                <div class="bottom-text">
-                    <div class="movie-name">
-                        <span>2021</span>
-                        <a href="#">The Fallout</a>
-                    </div>
-
-                    <div class="category-rating">
-                        <div class="category">
-                            <a href="#">Action</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-slide"></div>
-           
-    </div>
-   
-</div>
-
-    <div class="main-slider-box">
-        <a href="#" class="main-slider-overlay">
-            <i class="fas fa-play"></i>
-        </a>
-
-        <div class="main-slider-img">
-            <img src="images/Bones_and_All.jpg" alt="poster"/>
-        </div>
-
-        <div class="main-slider-text">
-            <span class="quality">Full HD</span>
-
-            <div class="bottom-text">
-                <div class="movie-name">
-                    <span>2022</span>
-                    <a href="#">Bones_and_All</a>
-                </div>
-
-                <div class="category-rating">
-                    <div class="category">
-                        <a href="#">Thriller, Romance</a>
-                    </div>
-                </div>
-            </div>
+        <div id="search">
+            <form action="#" method="get" accept-charset="utf-8">
+              <label for="search-field">SEARCH</label>
+              <input type="text" name="search field" value="Enter search here" id="search-field" class="blink search-field"  />
+              <input type="submit" value="GO!" class="search-button" />
+            </form>
         </div>
     </div>
-    <div class="swiper-slide"></div>
-           
-</div>
+    <div id="main">
+        <div id="content">
+            <div class="box">
+                <div class="head">
+                  <h2>COMING SOON</h2>
+                  <p class="text-right"><a href="#">See all</a></p>
+                </div>
+                <div class="movie">
+                  <div class="movie-image"> <span class="play"><span class="name">BARBIE</span></span> <a href="#"><img src="c:\Users\bida22-032\OneDrive - Botswana Accountancy College\Documents\sup movie\images\Barbie_2023_poster.jpg" alt="" /></a> </div>
 
-</div>
-
-<div class="main-slider-box">
-    <a href="#" class="main-slider-overlay">
-        <i class="fas fa-play"></i>
-    </a>
-
-    <div class="main-slider-img">
-        <img src="images/Dune_(2021_film).jpg" alt="poster"/>
+        </div>
     </div>
-
-    <div class="main-slider-text">
-        <span class="quality">Full HD</span>
-
-        <div class="bottom-text">
-            <div class="movie-name">
-                <span>2022</span>
-                <a href="#">Dune_</a>
+    <div class="movie">
+        <div class="movie-image"> <span class="play"><span class="name">BLUE BEETLE</span></span> <a href="#"><img src="c:\Users\bida22-032\OneDrive - Botswana Accountancy College\Documents\WARNER BROS\images\Blue_Beetle_poster.jpg" alt="" /></a> </div>
+    </div> 
+    <div class="movie">
+        <div class="movie-image"> <span class="play"><span class="name">DUNE PART 2</span></span> <a href="#"><img src="c:\Users\bida22-032\OneDrive - Botswana Accountancy College\Documents\WARNER BROS\images\Dune_Part_Two_poster.jpeg" alt="" /></a> </div>  
+    </div>   
+    <div class="movie">
+        <div class="movie-image"> <span class="play"><span class="name">BLACK ADAM</span></span> <a href="#"><img src="c:\Users\bida22-032\OneDrive - Botswana Accountancy College\Documents\WARNER BROS\images\Black_Adam_(film)_poster.jpg" alt="" /></a> </div>
+    </div>
+    <div class="movie">
+        <div class="movie-image"> <span class="play"><span class="name">THE FLASH</span></span> <a href="#"><img src="c:\Users\bida22-032\OneDrive - Botswana Accountancy College\Documents\sup movie\images\The_Flash_(film)_poster.jpg" alt="" /></a> </div>
+    </div>
+    <div class="movie last">
+        <div class="movie-image"> <span class="play"><span class="name">COLOR PURPLE</span></span> <a href="#"><img src="c:\Users\bida22-032\OneDrive - Botswana Accountancy College\Documents\sup movie\images\Color_Purple_2023_poster.jpg" alt="" /></a> </div>
+    </div>
+    <div class="box">
+        <div class="head">
+          <h2>MOVIES</h2>
+          <p class="text-right"><a href="#">See all</a></p>
+        </div>
+        <div class="movie">
+          <div class="movie-image"> <span class="play"><span class="name">DUNE</span></span> <a href="#"><img src="c:\Users\bida22-032\OneDrive - Botswana Accountancy College\Documents\sup movie\images\Dune_(2021_film).jpg" alt="" /></a> </div>
+          <div class="category-rating">
+            <div class="category">
+                <a href="#">Action Adventure Drama</a>
             </div>
-
+        </div>
+        </div>
+        <div class="movie">
+            <div class="movie-image"> <span class="play"><span class="name">SPLICE</span></span> <a href="#"><img src="c:\Users\bida22-032\OneDrive - Botswana Accountancy College\Documents\sup movie\images\Splice-poster.jpg" alt="" /></a> </div>
             <div class="category-rating">
                 <div class="category">
-                    <a href="#">Fantasy</a>
+                    <a href="#">Science fiction Horror</a>
                 </div>
             </div>
         </div>
-    </div>
-</div> <div class="swiper-slide"></div>
-           
-</div>
-
-</div>
-
-<div class="main-slider-box">
-    <a href="#" class="main-slider-overlay">
-        <i class="fas fa-play"></i>
-    </a>
-
-    <div class="main-slider-img">
-        <img src="images/The_Matrix_Resurrections.jpg" alt="poster"/>
-    </div>
-
-    <div class="main-slider-text">
-        <span class="quality">Full HD</span>
-
-        <div class="bottom-text">
-            <div class="movie-name">
-                <span>2022</span>
-                <a href="#">The The_Matrix_Resurrections</a>
-            </div>
-
+        <div class="movie">
+            <div class="movie-image"> <span class="play"><span class="name">EDGE OF DARKNESS</span></span> <a href="#"><img src="c:\Users\bida22-032\OneDrive - Botswana Accountancy College\Documents\sup movie\images\Edge_of_Darkness_the_Movie_poster.jpg" alt="" /></a> </div>
             <div class="category-rating">
                 <div class="category">
-                    <a href="#">Fantasy</a>
+                    <a href="#">Crime Action Thriller</a>
                 </div>
             </div>
         </div>
+        <div class="movie">
+            <div class="movie-image"> <span class="play"><span class="name">THE MATRIX RESURRECTIONS</span></span> <a href="#"><img src="c:\Users\bida22-032\OneDrive - Botswana Accountancy College\Documents\sup movie\images\The_Matrix_Resurrections.jpg" alt="" /></a> </div>
+            <div class="category-rating">
+                <div class="category">
+                    <a href="#">Science fiction Action</a>
+                </div>
+            </div>
+        </div>
+        <div class="movie">
+            <div class="movie-image"> <span class="play"><span class="name">BOOK OF ELI</span></span> <a href="#"><img src="c:\Users\bida22-032\OneDrive - Botswana Accountancy College\Documents\sup movie\images\Book_of_eli_poster.jpg" alt="" /></a> </div>
+            <div class="category-rating">
+                <div class="category">
+                    <a href="#">Action Adventure Drama</a>
+                </div>
+            </div>
+         </div>
+         <div class="box">
+            <div class="head">
+                <h2>TV SHOWS</h2>
+                <div class="movie">
+                    <div class="movie-image"> <span class="play"><span class="name">POLICE ACADEMY</span></span> <a href="#"><img src="c:\Users\bida22-032\OneDrive - Botswana Accountancy College\Documents\sup movie\images\Police_Academy_Animated.jpg" alt="" /></a> </div>
+            </div>
+            <div class="movie">
+                <div class="movie-image"> <span class="play"><span class="name">THE THORN BIRDS</span></span> <a href="#"><img src="c:\Users\bida22-032\OneDrive - Botswana Accountancy College\Documents\sup movie\images\The_Thorn_Birds_(miniseries).jpg" alt="" /></a> </div>
+        </div>
+        <div class="movie">
+            <div class="movie-image"> <span class="play"><span class="name">CONFLICT</span></span> <a href="#"><img src="c:\Users\bida22-032\OneDrive - Botswana Accountancy College\Documents\sup movie\images\330px-Dennis_Hopper_&_Karen_Sharpe_-_Conflict_TV_Promotional_Photograph_(1957).jpg" alt="" /></a> </div>
     </div>
-</div>
-            </div>
-            
-        </div>
-
-    </section>
-
-    <div class="slider-btns">
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-    <section id="upcoming">
-
-        <div class="upcoming-heading">
-            <h1>Upcoming Movies</h1>
-        </div>
-
-        <div class="post-container">
-
-            <div class="post-box"></div>
-            <div class="post-img">
-                <img src="images/Blue_Beetle_poster.jpg" alt="">
-            </div>
-            <div class="main-slider-text">
-                <span class="quality">Full HD</span>
-        
-                <div class="bottom-text">
-                    <div class="movie-name">
-                        <span>2022</span>
-                        <a href="#">Blue Beetle</a>
-                    </div>
-        
-                    <div class="category-rating">
-                        <div class="category">
-                            <a href="#">Fantasy</a>
-                        </div>
-                    </div>
+         </div>
+         <footer>
+            <div id="socialmedia">
+                <div class="social"> <span>FOLLOW US ON:</span>
+                    <ul>
+                <a href="www.facebook.com/Warner Bros/" target="_blank"><img src="images/socialmedia/fb.JPG"></a>
+                <a href="www.whatsapp.com/Warner Bros/" target="_blank"><img src="images/socialmedia/wa.JPG"></a>
+                <a href="www.youtube.com/user/Warner Bros/" target="_blank"><img src="images/socialmedia/yt.JPG"></a>
+                <a href="www.twitter.com/Warner Bros/" target="_blank"><img src="images/socialmedia/tt.JPG"></a>
+                    </ul>
                 </div>
             </div>
-            <div class="post-box"></div>
-            <div class="post-img">
-                <img src="images/Barbie_2023_poster.jpg" alt="">
-            </div>
-            <div class="main-slider-text">
-                <span class="quality">Full HD</span>
-        
-                <div class="bottom-text">
-                    <div class="movie-name">
-                        <span>2022</span>
-                        <a href="#">Barbie</a>
-                    </div>
-        
-                    <div class="category-rating">
-                        <div class="category">
-                            <a href="#">Fantasy</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="post-box"></div>
-            <div class="post-img">
-                <img src="images/The_Flash_(film)_poster.jpg" alt="">
-            </div>
-            <div class="main-slider-text">
-                <span class="quality">Full HD</span>
-        
-                <div class="bottom-text">
-                    <div class="movie-name">
-                        <span>2022</span>
-                        <a href="#">The Flash</a>
-                    </div>
-        
-                    <div class="category-rating">
-                        <div class="category">
-                            <a href="#">Fantasy</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="post-box"></div>
-            <div class="post-img">
-                <img src="images/Dune_Part_Two_poster.jpeg" alt="">
-            </div>
-            <div class="main-slider-text">
-                <span class="quality">Full HD</span>
-        
-                <div class="bottom-text">
-                    <div class="movie-name">
-                        <span>2022</span>
-                        <a href="#">Dune Part Two</a>
-                    </div>
-        
-                    <div class="category-rating">
-                        <div class="category">
-                            <a href="#">Fantasy</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-           
-    </section>
-
-    <footer>
-        <a href="index.html" class="logo">
-            Movies<span>hd</span>
-        </a>
-
-        <span class="copyright">
-            copyright@Warner Bros 2023
-        </span>
-        <div id="socialmedia">
-            <a href="www.facebook.com/Warner Bros/" target="_blank"><img src="images/socialmedia/fb.JPG"></a>
-            <a href="www.whatsapp.com/Warner Bros/" target="_blank"><img src="images/socialmedia/wa.JPG"></a>
-            <a href="www.youtube.com/user/Warner Bros/" target="_blank"><img src="images/socialmedia/yt.JPG"></a>
-            <a href="www.twitter.com/Warner Bros/" target="_blank"><img src="images/socialmedia/tt.JPG"></a>
-        </div>
-    </footer>
-
-    <script src="js/swiper-bundle.mi.js"></script>
-
-    <script>
-        var swiper= new Swiper(".mySwiper",{
-            slidesPerView: 1,
-            SpaceBetween: 10,
-            pagination: {
-                el: "swiper-pagination",
-                clickable: true,
-            },
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 2,
-                    SpaceBetween: 20,
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 40,
-                },
-                1024: {
-                    slidesPerView: 3,
-                    SpaceBetween: 50,
-                },
-            },
-        });
-    </script>
-</body>
+         </footer>
+    </body>
 </html>
